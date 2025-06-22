@@ -1,0 +1,24 @@
+{
+  "name": "agrosathi-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/translate": "^9.1.0",
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.4.0",
+    "form-data": "^4.0.3",
+    "multer": "^2.0.1",
+    "openai": "^5.6.0",
+    "twilio": "^5.7.1"
+  }
+}
