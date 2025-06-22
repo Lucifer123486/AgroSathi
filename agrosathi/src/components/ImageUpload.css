@@ -1,0 +1,134 @@
+.module-container {
+  min-height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.glass-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.glass-input,
+.glass-select {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  backdrop-filter: blur(6px);
+  outline: none;
+  font-size: 1rem;
+}
+
+.glass-select {
+  appearance: none;
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.glass-select option {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.file-upload-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+}
+
+.file-upload-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.glass-file-button {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.glass-button {
+  width: 100%;
+  max-width: 300px;
+  background: rgba(64, 255, 170, 0.2);
+  border: 1px solid rgba(64, 255, 170, 0.4);
+  color: white;
+  padding: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.glass-button:hover {
+  background: rgba(64, 255, 170, 0.4);
+  transform: translateY(-2px);
+}
+
+.glass-response {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: left;
+  max-height: 300px;          /* Adjust this if needed */
+  overflow-y: auto;           /* Scroll if text is too long */
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.6;
+  font-family: 'Courier New', monospace;  /* Optional for <pre> look */
+}
+
+.preview-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.result-text {
+  margin-top: 10px;
+  color: #c2ffc2;
+}

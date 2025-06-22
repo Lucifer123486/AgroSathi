@@ -1,0 +1,91 @@
+.module-container {
+  min-height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.glass-input {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  backdrop-filter: blur(6px);
+  outline: none;
+}
+
+.glass-button {
+  background: rgba(64, 255, 170, 0.2);
+  border: 1px solid rgba(64, 255, 170, 0.4);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+  background: rgba(64, 255, 170, 0.4);
+  transform: translateY(-2px);
+}
+
+.glass-response {
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: left;
+}
+.glass-select {
+  appearance: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #fff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.glass-select option {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+
+.preview-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.result-text {
+  margin-top: 10px;
+  color: #c2ffc2;
+}

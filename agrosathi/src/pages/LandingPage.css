@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+}
+
+/* Hero Section Layout */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Aurora Background */
+.aurora-bg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.aurora-bg svg {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+
+@keyframes waveMove {
+  0% {
+    transform: scaleY(1) translateY(0);
+  }
+  100% {
+    transform: scaleY(1.2) translateY(-20px);
+  }
+}
+
+/* Overlay Layer */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Hero Content */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  color: white;
+  padding: 1rem;
+  animation: fadeUp 1s ease-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtitle Text */
+.subtitle {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #a5d6a7;
+  margin-bottom: 0.5rem;
+}
+
+/* GradientText Styling */
+.custom-class {
+  font-size: 4.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-top: 10px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Button Area */
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  padding: 14px 32px;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1); /* glass bg */
+  backdrop-filter: blur(10px);          /* glass blur */
+  -webkit-backdrop-filter: blur(10px);  /* for Safari */
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 0 10px rgba(64, 255, 170, 0.5)
+
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .custom-class {
+    font-size: 3rem;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+}
