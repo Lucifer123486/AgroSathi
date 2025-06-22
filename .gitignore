@@ -1,0 +1,19 @@
+# Ignore system files
+.DS_Store
+
+# Node and Python build artifacts
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.env
+*.tflite
+*.h5
+*.zip
+*.tar.gz
+*.egg-info/
+build/
+dist/
+.env
