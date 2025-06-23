@@ -1,6 +1,8 @@
-# 🌾 AgroSathi – AI-Powered Rural Companion for Smart Farming
+![image](https://github.com/user-attachments/assets/024c377a-28cb-4188-91cd-e6b2284e68ca)# 🌾 AgroSathi – AI-Powered Rural Companion for Smart Farming
 
 AgroSathi is a multilingual, AI-integrated smart farming assistant that helps farmers detect plant diseases using images and get personalized voice/text-based agricultural advice in native Indian languages like Marathi and Hindi.
+
+The site is live at : https://agrosathi-frontend.vercel.app/
 
 ---
 
